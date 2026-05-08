@@ -4,6 +4,12 @@
 
 ---
 
+## Deployed Link
+
+https://ai-company-evaluator.streamlit.app/
+
+---
+
 ## What It Does
 
 You type a company name. The system runs it through a multi-layer verification pipeline and tells you whether it's **Genuine**, **Suspicious**, or **Not Genuine** — with evidence.

@@ -45,7 +45,8 @@ Return ONLY valid JSON in this format:
     "web_presence": "strong/moderate/weak",
     "news_coverage": "positive/neutral/negative",
     "red_flags": ["flag1", "flag2"],
-    "reason": "short explanation"
+    "reason": "short explanation",
+    "verdict_explanation": "Detailed human-like explanation of why the company appears genuine, suspicious, or risky based on online presence, MCA verification likelihood, reputation, and trust indicators."
 }}
 
 Scoring Rules:
@@ -54,6 +55,15 @@ Scoring Rules:
 - LinkedIn/Crunchbase/news coverage increases score
 - Scam complaints decrease score
 - No digital footprint is suspicious
+
+The verdict explanation should:
+- sound natural and professional
+- reference online presence and credibility
+- mention reputation signals
+- mention trust concerns if present
+- avoid repetitive generic wording
+- be 3–5 lines long
+- vary dynamically for different companies
 """
 
     response = client.chat.completions.create(

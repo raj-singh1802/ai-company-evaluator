@@ -39,7 +39,7 @@ small_df = small_df.sort_values(
 # Reset index
 small_df = small_df.reset_index(drop=True)
 
-small_df = small_df.head(50000)
+small_df = small_df.head(500000)
 
 # Save compressed version
 small_df.to_csv(

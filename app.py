@@ -24,7 +24,7 @@ st.set_page_config(
 def load_mca_data():
 
     df = pd.read_csv(
-        "data/mca_companies.csv",
+        "data/mca_companies_small.csv",
         encoding="latin-1",
         low_memory=False
     )
